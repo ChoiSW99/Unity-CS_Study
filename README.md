@@ -25,12 +25,12 @@
 	ctrl c, ctrl v == ctrl d
 ##### Inspector
 	Transform 컴포넌트
-		화살표로 조절 가능
+	  화살표로 조절 가능
 ##### Component
 	게임오브젝트의 성질을 정해줌
 
 ##### -rigidbody : 물리법칙 (중력 등), Use Gravity 언체크하면 무중력
-	     AddForce(Vector3);
+	AddForce(Vector3);
 ##### -physics material : collider의 material에 적용됨, 동적/정적 마찰력과 탄성력 값, 충돌하는 두 오브젝트의 마찰이 합쳐지는 방식(friction combine)이 있음.
 ##### -collider : 충돌체, 물리엔진의 동작 기준이 됨. 
 	void OnCollisionEnter(Collision collision) : 실제 충돌 시
