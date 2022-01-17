@@ -1,12 +1,12 @@
 # Unity-CS_Study
-
-GameObject란?
-게임을 실행하면 나오는 게임을 구성하는 >요소
-	예. 플레이어, 장애물, 게임 배경 등
-새로운 게임오브젝트 만들기(큐브)
-	메뉴-GameObject-3DObject-Cube
-하이에라키뷰
-	새로 만든 GameObject를 Cube라는 목록으로 표시
+<br>
+GameObject<br>
+게임을 실행하면 나오는 게임을 구성하는 요소<br>
+	예. 플레이어, 장애물, 게임 배경 등<br>
+새로운 게임오브젝트 만들기(큐브)<br>
+	메뉴-GameObject-3DObject-Cube<br>
+하이에라키뷰<br>
+	새로 만든 GameObject를 Cube라는 목록으로 표시<br>
 신뷰
 	새로 만든 Cube라는 게임오브젝트의 배치상태와 모양 표시
 	플레이시 게임오브젝트를 비추게함 shift+F
