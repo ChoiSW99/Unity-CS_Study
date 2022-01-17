@@ -61,28 +61,28 @@
 	class : 설계도 
 	component : 객체
 
-상속 
-class A : B
-부모클래스의 메소드 호출 base.메소드명();
-이 때 부모클래스의 메소드는 private가 아니라 protected로 바꿔줘야 함.
+##### 상속 
+	class A : B  
+	부모클래스의 메소드 호출 base.메소드명();  
+	이 때 부모클래스의 메소드는 private가 아니라 protected로 바꿔줘야 함.  
+	  
+	부모/자식 오브젝트 : 예시) stage가 회전할 때 그 위의 장애물도 같이 회전되어야 함.
+	스크립트에서 transform.position은 글로벌, transform.localPosition 로컬위치이므로 localPosition으로 작성해야 stage에 장애물이 붙은채로 동작함.
 	
 
-사용자의 입력 받기 (Edit – Project Setting – Input - InputManager)
-	Input.GetAxis(“Horizontal”); //화살표좌우 or AD(-1 ~ +1)
-	Input.GetAxis(“Vertical”); //화살표상하 or WS(-1 ~ +1)
+##### 사용자의 입력 받기 (Edit – Project Setting – Input - InputManager)  
+	Input.GetAxis(“Horizontal”); //화살표좌우 or AD(-1 ~ +1)  
+	Input.GetAxis(“Vertical”); //화살표상하 or WS(-1 ~ +1)  
 
-	Input.GetKeyDown(KeyCode.Space); //스페이스 누를 때 한번
-	Input.GetKeyUp(KeyCode.Space); //스페이스 뗄 때 한번
-	Input.GetKey(KeyCode.Space); //스페이스 누를때 계속
-
-	Input.touchCount //어딘가 눌릴 때
-
-	Input.GetMouseButton(0) //마우스 왼쪽 키 누를 때 
-	Input.GetMouseButton(1) //마우스 오른쪽 키 누를 때 
-	Input.mousePosition //마우스 위치
-	if(Input.mousePosition  < Screen.Width/2) //마우스 클릭한 부분이 게임화면의 좌측
+	Input.GetKeyDown(KeyCode.Space); //스페이스 누를 때 한번  
+	Input.GetKeyUp(KeyCode.Space); //스페이스 뗄 때 한번  
+	Input.GetKey(KeyCode.Space); //스페이스 누를때 계속  
+	
+	Input.touchCount //어느 키라도 눌릴 때 1이상 됨  
+	
+	Input.GetMouseButton(0) //마우스 왼쪽 키 누를 때  
+	Input.GetMouseButton(1) //마우스 오른쪽 키 누를 때  
+	Input.mousePosition //마우스 위치  
+	if(Input.mousePosition  < Screen.Width/2) //마우스 클릭한 부분이 게임화면의 좌측  
 
 오일러각(EulerAngles)은 짐벌락현상이 발생할 수 있음. 이를 방지하려면 사원수(Quaternion을 사용)
-
-부모/자식 오브젝트 : 예시) stage가 회전할 때 그 위의 장애물도 같이 회전되어야 함.
-	스크립트에서 transform.position은 글로벌, transform.localPosition 로컬위치이므로 localPosition으로 작성해야 stage에 장애물이 붙은채로 동작함.
