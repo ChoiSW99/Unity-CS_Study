@@ -18,10 +18,9 @@
 	R  
 	GameObject의 크기 조절  
 ##### 시점 조절
-	Alt키를 누르고 신뷰를 드래그
-	마우스 우클릭 + wasd
-       줌인/줌아웃
-	마우스 휠 드래그
+	- Alt키를 누르고 씬뷰를 드래그
+	- 마우스 우클릭 + wasd
+        - 줌인/줌아웃 (마우스 휠 드래그)
 ##### 복제(복붙)
 	ctrl c, ctrl v == ctrl d
 ##### Inspector
@@ -52,15 +51,15 @@
 	GameManager 오브젝트, 스크립트 : 게임관리에 관한 메소드들을 모아서 관리, public
            GameObject.Find(“GameManager”).SendMessage(“게임매니저의 메소드명”);
 	   호출할 메소드가 public이면 다른 스크립트에서 스크립트_컴포넌트.메소드로 호출가능함.
-	public으로 변수 정의하면 Inspector에 나타남. 초기값은 Inspector의 값을 따라감.
-Application.LoadLevel(“씬이름”); //씬 시작
-Instantiate(원본오브젝트(prefab), 생성될위치, 돌리기)// 게임오브젝트 생성
-Destroy(오브젝트) // 게임오브젝트 제거
-Time.deltaTime // 전 프레임과의 시간
-Prefab //원본, 나중에 꺼내 씬에 복제품으로 넣을 수 있음.
+	public으로 변수 정의하면 Inspector에 나타남. 초기값은 Inspector의 값을 따라감.  
+	Application.LoadLevel(“씬이름”); //씬 시작
+	Instantiate(원본오브젝트(prefab), 생성될위치, 돌리기)// 게임오브젝트 생성
+	Destroy(오브젝트) // 게임오브젝트 제거
+	Time.deltaTime // 전 프레임과의 시간
+	Prefab //원본, 나중에 꺼내 씬에 복제품으로 넣을 수 있음.
 
-class : 설계도 
-component : 객체
+	class : 설계도 
+	component : 객체
 
 상속 
 class A : B
