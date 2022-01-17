@@ -36,27 +36,26 @@
 	void OnCollisionEnter(Collision collision) : 실제 충돌 시
 		collision.gameObject가 자신과 부딪힌 게임오브젝트
 	void OnTriggetEnter(Collider collider) : 물체가 특정 영역을 지나갔을 때 발생하는 트리거, 물체 사라지게할 때 사용, 죽는 지점
-	물체가 충돌이 아니라 지나갔는지만(접촉) 감지하려면 Is Trigger를 체크  
+		물체가 충돌이 아니라 지나갔는지만(접촉) 감지하려면 Is Trigger를 체크  
 ##### - script(c#) : 개발자가 정의한 컴포넌트, 클래스명과 스크립트명이 꼭 같아야함.
 	component 가져오기 : Rigidbody rb = GetComponent<Rigidbody>();
-	gameobject 가져오기 : GameObject ball = GameObject.Find(“Ball”);
+	gameobject 가져오기 : GameObject ball = GameObject.Find(“Ball”);  <br>
 	(태그)
 	GameObject g = GameObject.FindGameObjectWithTag(“태그명”);
-   			 GameObject.FindGameObjectWithTags(“태그명”); //배열로 가져옴
-
+   			 GameObject.FindGameObjectWithTags(“태그명”); //배열로 가져옴  <br>
 	Vector3.Distance(position1, position2); //두 벡터간의 거리
 	Vector3.MoveTowards(current위치, target위치, 속도); //현위치에서 target위치로 속도만큼씩 직선으로 감
-	transform.Rotate(new Vector3(0,0,1)); //(0,0,1)방향으로 회전함
-
+	transform.Rotate(new Vector3(0,0,1)); //(0,0,1)방향으로 회전함  
+	<br>
 	GameManager 오브젝트, 스크립트 : 게임관리에 관한 메소드들을 모아서 관리, public
            GameObject.Find(“GameManager”).SendMessage(“게임매니저의 메소드명”);
-	   호출할 메소드가 public이면 다른 스크립트에서 스크립트_컴포넌트.메소드로 호출가능함.
-	public으로 변수 정의하면 Inspector에 나타남. 초기값은 Inspector의 값을 따라감.  
-	Application.LoadLevel(“씬이름”); //씬 시작
+	   호출할 메소드가 public이면 다른 스크립트에서 스크립트_컴포넌트.메소드로 호출가능함.  <br>
+	public으로 변수 정의하면 Inspector에 나타남. 초기값은 Inspector의 값을 따라감.  <br>
+	Application.LoadLevel(“씬이름”); //씬 시작  <br>
 	Instantiate(원본오브젝트(prefab), 생성될위치, 돌리기)// 게임오브젝트 생성
-	Destroy(오브젝트) // 게임오브젝트 제거
-	Time.deltaTime // 전 프레임과의 시간
-	Prefab //원본, 나중에 꺼내 씬에 복제품으로 넣을 수 있음.
+	Destroy(오브젝트) // 게임오브젝트 제거  <br>
+	Time.deltaTime // 전 프레임과의 시간  <br>
+	Prefab //원본, 나중에 꺼내 씬에 복제품으로 넣을 수 있음.  <br>
 
 	class : 설계도 
 	component : 객체
